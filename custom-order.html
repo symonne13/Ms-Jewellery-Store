@@ -1,0 +1,347 @@
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Order | M's Jewellery Store</title>
+
+    <link rel="icon" type="image/jpeg" href="static/images/favicon1.jpg">
+    <link rel="stylesheet" href="static/css/custom-order.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="brand">
+            <img src="static/images/logo.jpg" alt="M's Jewellery Store logo" width="80">
+
+            <div class="brand-text">
+                <h1>M's Jewellery Store</h1>
+                <p>TIMELESS ELEGANCE</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="custom-order.html" class="active">Custom Order</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="order-hero">
+            <p class="order-label">DESIGNED AROUND YOU</p>
+            <h2>Create Something Beautiful</h2>
+            <p>
+                Have a special design in mind? Tell us what you love,
+                and let us help you bring your jewellery idea to life.
+            </p>
+        </section>
+        
+        <section class="order-section">
+
+            <div class="form-intro">
+                <p class="section-label">YOUR IDEA, OUR CRAFT</p>
+                <h2>Tell Us What You Imagine</h2>
+                <p>
+                    Complete the form below with your preferences.
+                    Fields marked with * are required.
+                </p>
+            </div>
+
+            <div class="order-layout">
+
+                <form class="custom-order-form" action="#" method="get">
+
+                    <!-- FIELDSET 1: CUSTOMER DETAILS -->
+                    <fieldset>
+                        <legend>01. Your Details</legend>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="customer-name"
+                                    name="customer_name"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customer-email">Email Address *</label>
+                                <input
+                                    type="email"
+                                    id="customer-email"
+                                    name="customer_email"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number *</label>
+                                <input
+                                    type="tel"
+                                    id="customer-phone"
+                                    name="customer_phone"
+                                    placeholder="+254 7XX XXX XXX"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customer-location">Location</label>
+                                <input
+                                    type="text"
+                                    id="customer-location"
+                                    name="customer_location"
+                                    placeholder="Town or city"
+                                >
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- FIELDSET 2: JEWELLERY PREFERENCES -->
+                    <fieldset>
+                        <legend>02. Your Jewellery</legend>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jewellery-type">Jewellery Type *</label>
+                                <select id="jewellery-type" name="jewellery_type" required>
+                                    <option value="">Choose a jewellery type</option>
+                                    <option value="necklace">Necklace</option>
+                                    <option value="earrings">Earrings</option>
+                                    <option value="bracelet">Bracelet</option>
+                                    <option value="ring">Ring</option>
+                                    <option value="jewellery-set">Jewellery Set</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quantity">Quantity *</label>
+                                <input
+                                    type="number"
+                                    id="quantity"
+                                    name="quantity"
+                                    min="1"
+                                    max="50"
+                                    value="1"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="design-url">Design Inspiration URL</label>
+                            <input
+                                type="url"
+                                id="design-url"
+                                name="design_url"
+                                placeholder="https://example.com/design"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label>Preferred Material *</label>
+
+                            <div class="choice-group">
+                                <label>
+                                    <input type="radio" name="material" value="gold" required>
+                                    Gold
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="material" value="silver">
+                                    Silver
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="material" value="beads">
+                                    Beads
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="material" value="other">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- FIELDSET 3: DESIGN AND DELIVERY -->
+                    <fieldset>
+                        <legend>03. Design & Delivery</legend>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="delivery-date">Preferred Date *</label>
+                                <input
+                                    type="date"
+                                    id="delivery-date"
+                                    name="delivery_date"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget (KSh) *</label>
+                                <input
+                                    type="number"
+                                    id="budget"
+                                    name="budget"
+                                    min="100"
+                                    placeholder="e.g. 3000"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Extra Features</label>
+
+                            <div class="choice-group">
+                                <label>
+                                    <input type="checkbox" name="features" value="engraving">
+                                    Personal engraving
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="features" value="gift-wrapping">
+                                    Gift wrapping
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="features" value="gift-message">
+                                    Gift message
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="design-description">Describe Your Design *</label>
+                            <textarea
+                                id="design-description"
+                                name="design_description"
+                                rows="5"
+                                placeholder="Describe the colours, style, size and details you have in mind..."
+                                required
+                            ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- FIELDSET 4: CONFIRMATION -->
+                    <fieldset>
+                        <legend>04. Final Details</legend>
+
+                        <div class="form-group">
+                            <label for="discovery">How Did You Find Us?</label>
+                            <select id="discovery" name="discovery">
+                                <option value="">Select an option</option>
+                                <option value="social-media">Social media</option>
+                                <option value="friend">Friend or family</option>
+                                <option value="search-engine">Search engine</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="consent-label">
+                                <input type="checkbox" name="contact_consent" value="yes" required>
+                                I agree that the store may contact me about this enquiry. *
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="submit-button">
+                        Submit Custom Order Enquiry
+                    </button>
+
+                    <p class="form-note">
+                        This form is a front-end assignment demo and does not yet
+                        send your enquiry to a real store.
+                    </p>
+
+                </form>
+
+                <aside class="order-sidebar">
+                    <div class="sidebar-card">
+                        <p class="section-label">A PERSONAL TOUCH</p>
+                        <h3>Your Style, Your Story</h3>
+                        <p>
+                            Every great piece begins with an idea.
+                            Share your inspiration and preferences so your
+                            design can reflect what makes it special to you.
+                        </p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>How It Works</h3>
+                        <ol>
+                            <li>Tell us your design idea.</li>
+                            <li>Share your material and budget preferences.</li>
+                            <li>Discuss the details with the store.</li>
+                            <li>Confirm your final design.</li>
+                        </ol>
+                    </div>
+
+                    <div class="sidebar-card sidebar-highlight">
+                        <h3>Need Inspiration?</h3>
+                        <p>Explore our existing pieces for ideas.</p>
+                        <a href="collections.html">View Collections →</a>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+</html>
+
+        
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>M's Jewellery Store</h2>
+            <p>Timeless elegance, made to shine.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="custom-order.html">Custom Order</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Get in Touch</h3>
+            <p>Email: <a href="mailto:msjewellerystore@gmail.com">msjewellerystore@gmail.com</a></p>
+            <p>Location: Kenya</p>
+            <p>We'd love to help you find your perfect piece.</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 M's Jewellery Store. All rights reserved.</p>
+        <p>Crafted with elegance <span aria-hidden="true">♡</span></p>
+    </div>
+
+</footer>
+    </body>
+</html>

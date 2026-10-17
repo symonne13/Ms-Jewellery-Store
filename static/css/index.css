@@ -1,0 +1,539 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFCF7;
+    color: #30251F;
+}
+/*header layout*/
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: #FFFCF7;
+    border-bottom:  1px solid #D4AF72;
+}
+/* Logo and brand name */
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.brand-text h1 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin: 0;
+    color: #30251F;
+}
+.brand-text p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #A47B43;
+    margin: 6px 0 0;
+}
+
+/* Navigation links */
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #30251F;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.navbar a:hover {
+    color: #A47B43;
+    border-bottom: 2px solid #D4AF72;
+}
+/* Current page link */
+.navbar a.active {
+    color: #A47B43;
+    border-bottom: 2px solid #D4AF72;
+}
+
+/* Smooth hover effect */
+.navbar a {
+   transition: all 0.3s ease;
+}
+
+/* Hero section */
+.hero {
+    background-color: #30251F;
+    color: #FFFCF7;
+    padding: 90px 8%;
+    min-height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Hero text container */
+.hero-content {
+    max-width: 680px;
+}
+
+/* Small introductory label */
+.hero-label {
+    color: #D4AF72;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Main hero heading */
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 0 20px;
+}
+
+/* Hero description */
+.hero-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #E6DCCF;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+/* Call-to-action button */
+.hero-button {
+    display: inline-block;
+    background-color: #D4AF72;
+    color: #30251F;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.hero-button:hover {
+    background-color: #E8C991;
+    transform: translateY(-2px);
+}
+
+/* Hero image container */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Hero jewellery photograph */
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Responsive hero layout */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 6%;
+        gap: 30px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: 300px;
+    }
+}
+
+/* About Us section */
+.about {
+    background-color: #FFFCF7;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/* About section content */
+.about-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Small gold label */
+.about-label {
+    color: #A47B43;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+/* About section heading */
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #30251F;
+    margin: 0 0 24px;
+}
+
+/* About section paragraphs */
+.about-description {
+    color: #66584D;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0 0 18px;
+}
+
+/* Collections link */
+
+.about-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #A47B43;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #D4AF72;
+    padding-bottom: 5px;
+    transition: color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.about-link:hover {
+    color: #30251F;
+    border-color: #30251F;
+}
+
+.about-label {
+    color: #A47B43;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D4AF72;
+}
+
+
+/* Footer section */
+.site-footer {
+    background-color: #30251F;
+    color: #FFFCF7;
+    padding: 55px 8% 20px;
+}
+
+/* Main footer layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+/* Footer columns */
+.footer-brand,
+.footer-links,
+.footer-contact {
+    flex: 1;
+}
+
+/* Store name */
+.footer-brand h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #D4AF72;
+    margin: 0 0 12px;
+}
+
+/* Column headings */
+.footer-content h3 {
+    font-size: 15px;
+    color: #D4AF72;
+    margin: 0 0 18px;
+}
+
+/* Footer paragraphs */
+.footer-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #E6DCCF;
+    margin: 0 0 10px;
+}
+
+/* Footer links */
+.footer-content a {
+    display: block;
+    width: fit-content;
+    color: #E6DCCF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+/* Contact email inside its paragraph */
+.footer-contact p a {
+    display: inline;
+}
+
+/* Footer link hover */
+.footer-content a:hover {
+    color: #D4AF72;
+}
+
+/* Copyright row */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #66584D;
+    padding-top: 20px;
+}
+
+/* Copyright text */
+.footer-bottom p {
+    color: #C8BBAE;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Mobile footer layout */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+/* Jewellery highlights section */
+.highlights {
+    background-color: #F5EFE6;
+    padding: 75px 8%;
+}
+
+/* Section heading */
+.highlights-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.highlights-label {
+    color: #A47B43;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.highlights-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #30251F;
+    margin: 0 0 16px;
+}
+
+.highlights-heading > p:last-child {
+    color: #66584D;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Three-card grid */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Individual cards */
+.highlight-card {
+    background-color: #FFFCF7;
+    border: 1px solid #E6DCCF;
+    border-radius: 10px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Decorative symbol */
+.highlight-icon {
+    color: #A47B43;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+/* Card heading */
+.highlight-card h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    color: #30251F;
+    margin: 0 0 14px;
+}
+
+/* Card description */
+.highlight-card p {
+    color: #66584D;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Card hover effect */
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(48, 37, 31, 0.10);
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 768px) {
+    .highlights {
+        padding: 55px 6%;
+    }
+
+    .highlights-heading h2 {
+        font-size: 30px;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+/* Shopping guide section */
+.shopping-guide {
+    background-color: #FFFCF7;
+    padding: 75px 8%;
+}
+
+/* Section heading */
+.shopping-guide-heading {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.guide-label {
+    color: #A47B43;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.shopping-guide-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #30251F;
+    margin: 0 0 16px;
+}
+
+.shopping-guide-heading > p:last-child {
+    color: #66584D;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Two list cards */
+.guide-lists {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Individual list card */
+.guide-list-card {
+    background-color: #F5EFE6;
+    border: 1px solid #E6DCCF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Card headings */
+.guide-list-card h3 {
+    font-family: Georgia, serif;
+    color: #30251F;
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+/* Both lists */
+.shopping-steps,
+.jewellery-types {
+    padding-left: 24px;
+    margin: 0;
+    color: #66584D;
+}
+
+/* Individual list items */
+.shopping-steps li,
+.jewellery-types li {
+    padding-left: 5px;
+    margin-bottom: 14px;
+    line-height: 1.8;
+}
+
+/* Champagne-gold list markers */
+.shopping-steps li::marker,
+.jewellery-types li::marker {
+    color: #A47B43;
+    font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .shopping-guide {
+        padding: 55px 6%;
+    }
+
+    .shopping-guide-heading h2 {
+        font-size: 30px;
+    }
+
+    .guide-lists {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .guide-list-card {
+        padding: 24px;
+    }
+}
